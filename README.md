@@ -4,10 +4,21 @@
 
 ✅这是一个基于 Python + PyGame 的库，用于给 PyGame 更好的 GUI 体验。
 
+> ⚠注意：目前正在进行大范围代码修改，已经发现导致 bug 的代码：
+
+```python
+# 组件类定义部分
+...
+pos=[0,0],size=[100,50]
+...
+```
+
+> `list` 类型的变量是可变量，这会导致多个组件共用一个列表（*在默认的情况下*），导致修改一个 `pos` 直接全体修改。
+
 ## 作者 / 贡献者
 发起人：[@cjjJasonChen](https://github.com/cjjJasonchen)（[FishC 论坛账号](https://fishc.com.cn/space-uid-507904.html)）
 
-GitHub 仓库贡献者列表（*人话：GitHub 鸽子列表*）：
+GitHub 仓库贡献者列表（*人话：GitHub 鸽子列表*😄）：
 
 > 条件：他们对 GitHub 仓库进行过 commit 操作。
 
